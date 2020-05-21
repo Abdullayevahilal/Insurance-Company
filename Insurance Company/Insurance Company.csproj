@@ -9,6 +9,15 @@
     <ProjectReference Include="..\Repository\Repository.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Views\About\" />
+    <Folder Include="Views\CaseStudies\" />
+    <Folder Include="Views\FAQ\" />
+    <Folder Include="Views\Contact\" />
+    <Folder Include="Views\Blog\" />
+    <Folder Include="Views\Services\" />
+  </ItemGroup>
+
 
 
 </Project>

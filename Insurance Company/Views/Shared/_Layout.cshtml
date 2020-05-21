@@ -1,14 +1,12 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-
-<!-- Mirrored from themegeniuslab.com/html/jotex-live-cp/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 May 2020 15:22:11 GMT -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="irstheme">
 
-    <title> Jotex - Insurance HTML Template </title>
+    <title>@ViewData["Title"] -Insurance</title>
 
     <link href="~/css/themify-icons.css" rel="stylesheet">
     <link href="~/css/flaticon.css" rel="stylesheet">
@@ -23,28 +21,23 @@
     <link href="~/css/odometer-theme-default.css" rel="stylesheet">
     <link href="~/css/jquery.fancybox.css" rel="stylesheet">
     <link href="~/css/style.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    @RenderSection("Head", required: false)
 
 </head>
 
 <body>
 
-    <!-- start page-wrapper -->
+     @*start page-wrapper 
     <div class="page-wrapper">
 
-        <!-- start preloader -->
+         start preloader 
         <div class="preloader">
             <div class="spinner">
                 <div class="double-bounce1"></div>
                 <div class="double-bounce2"></div>
             </div>
         </div>
-        <!-- end preloader -->
+         end preloader*@ 
         <!-- Start header -->
         <header id="header" class="site-header header-style-1">
             <div class="topbar">
@@ -208,7 +201,9 @@
             </nav>
         </header>
         <!-- end of header -->
-      @RenderBody()
+
+        @RenderBody()
+
         <!-- start site-footer -->
         <footer class="site-footer">
             <div class="newsletter-area">
@@ -242,7 +237,7 @@
                                 <div class="widget-title">
                                     <h3>
                                         <span class="hidden">About us</span>
-                                        <img src="assets/images/footer-logo.png" alt>
+                                        <img src="~/images/footer-logo.png" alt>
                                     </h3>
                                 </div>
                                 <p>Showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy</p>
@@ -324,12 +319,12 @@
 
 
 
-    </div>
+    
     <!-- end of page-wrapper -->
     <!-- All JavaScript files
     ================================================== -->
 
-    @RenderSection("Modals", required: false)
+
     <script src="~/js/jquery.min.js"></script>
     <script src="~/js/bootstrap.min.js"></script>
 
@@ -341,6 +336,4 @@
     @RenderSection("Scripts", required: false)
 
 </body>
-
-<!-- Mirrored from themegeniuslab.com/html/jotex-live-cp/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 May 2020 15:22:50 GMT -->
 </html>
